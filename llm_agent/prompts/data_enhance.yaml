@@ -1,0 +1,15 @@
+1.0.0:
+  - prompt: |
+      #Instruction
+      Please summarize this member info with the given information and expanded information expanded from the web
+
+      # Member information (ground truth)
+      {memberinfo}
+      {company_expand}
+      {linkedin_expand}
+
+      # Constraints:
+      If any of the result from web search is not relevant or inconsistent with member info, please ignore and stick with member info.
+
+      # Response format:
+      Please output the result in pure string format

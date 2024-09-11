@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "llm-agent"
+version = "0.1.0"
+description = ""
+authors = ["Hsieh Li-Cheng <tappy820918@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11, <3.12"
+pytest = "^8.3.2"
+google-generativeai = "*"
+openai = "*"
+httpx = "*"
+pendulum = "*"
+python-dotenv = "1.0.1"
+toml = "*"
+tqdm = "*"
+psycopg2 = "2.9.9"
+pandas = "*"
+numpy = "*"
+openpyxl = "*"
+redis = "*"
+
+langgraph = "*"
+langchain = "*"
+langchain_community = "*"
+langchain-google-genai = "*"
+pydantic = "^2.8"
+duckduckgo-search = "*"
+qdrant-client = "*"
+fastembed = "*"
+
+apache-airflow = "*"
+
+streamlit = "1.38.0"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+agent-run = "llm_agent.src:start"

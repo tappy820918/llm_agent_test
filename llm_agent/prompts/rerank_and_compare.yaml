@@ -1,0 +1,22 @@
+1.0.0:
+  - prompt: |
+      #Instruction
+      From the below {candidate_nums} candidate `member_no`s, please give me the `member_no` in which its profile best matches the target member_id and provide your thoughts on why you think so.
+
+
+      # Target member information
+      {memberinfo_str}
+
+      # Candidate members information list
+      {candidate_info_str}
+
+      # Constraints:
+      1. Please only output ONE most revalent `menber_no`.
+      2. If there are no candidates return `member_no` as -1 and reason as 'no_candidates'.
+
+      # Response format:
+      Please output the result in format of json:
+      {{
+        "member_no": "xxxxx"
+        "reason": "xxxxx"
+      }}
