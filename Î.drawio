@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.7.12">
   <diagram name="Page-1" id="74b105a0-9070-1c63-61bc-23e55f88626e">
-    <mxGraphModel dx="1137" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="956" dy="509" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" style=";html=1;" parent="0" />
@@ -123,14 +123,23 @@
         <mxCell id="dVDQ1dHZeW1puFKevPLn-37" value="&lt;div&gt;Base on version query top 5 similar items&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="670" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="dVDQ1dHZeW1puFKevPLn-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dVDQ1dHZeW1puFKevPLn-41" target="dVDQ1dHZeW1puFKevPLn-44">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="dVDQ1dHZeW1puFKevPLn-41" value="&lt;div&gt;Rerank&lt;/div&gt;&lt;div&gt;Join query &amp;amp; 5 candidate&#39;s member info as prompt &amp;amp; let it recommend&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="831" y="340" width="179" height="60" as="geometry" />
         </mxCell>
         <mxCell id="dVDQ1dHZeW1puFKevPLn-44" value="Return top recommendation &amp;amp; reason" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1039" y="340" width="120" height="60" as="geometry" />
+          <mxGeometry x="1150" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dVDQ1dHZeW1puFKevPLn-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dVDQ1dHZeW1puFKevPLn-46" target="dVDQ1dHZeW1puFKevPLn-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dVDQ1dHZeW1puFKevPLn-46" value="Redis" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=5.666666666666686;" vertex="1" parent="1">
+          <mxGeometry x="1054" y="345" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dVDQ1dHZeW1puFKevPLn-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dVDQ1dHZeW1puFKevPLn-41" target="dVDQ1dHZeW1puFKevPLn-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dVDQ1dHZeW1puFKevPLn-49" value="Cache query result &lt;br&gt;binary to redis" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1025" y="400" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
